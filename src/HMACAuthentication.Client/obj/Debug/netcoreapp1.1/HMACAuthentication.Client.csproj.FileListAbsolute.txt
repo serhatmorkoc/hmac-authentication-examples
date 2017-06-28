@@ -1,0 +1,9 @@
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\bin\Debug\netcoreapp1.1\HMACAuthentication.Client.deps.json
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\bin\Debug\netcoreapp1.1\HMACAuthentication.Client.runtimeconfig.json
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\bin\Debug\netcoreapp1.1\HMACAuthentication.Client.runtimeconfig.dev.json
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\bin\Debug\netcoreapp1.1\HMACAuthentication.Client.dll
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\bin\Debug\netcoreapp1.1\HMACAuthentication.Client.pdb
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\obj\Debug\netcoreapp1.1\HMACAuthentication.Client.csprojResolveAssemblyReference.cache
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\obj\Debug\netcoreapp1.1\HMACAuthentication.Client.AssemblyInfo.cs
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\obj\Debug\netcoreapp1.1\HMACAuthentication.Client.dll
+C:\Github\hmac-authentication-examples\src\HMACAuthentication.Client\obj\Debug\netcoreapp1.1\HMACAuthentication.Client.pdb
