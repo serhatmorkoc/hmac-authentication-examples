@@ -29,9 +29,11 @@ namespace HMACAuthentication.Client
         private async Task<HttpResponseMessage> DoPostPutAsync<T>(HttpMethod method, string uri, T item)
         {
             var requestMessage = new HttpRequestMessage(HttpMethod.Post, uri);
-            requestMessage.Content = new StringContent(JsonConvert.SerializeObject(item), Encoding.UTF8, "application/json");
+            //requestMessage.Content = new StringContent(JsonConvert.SerializeObject(item), Encoding.UTF8, "application/json");
+            requestMessage.Content = new StringContent(item.ToString(), Encoding.UTF8, "text/xml");
 
             var response = await _client.SendAsync(requestMessage);
+            var qqq = response.Content.ReadAsStringAsync();
             if (response.StatusCode == HttpStatusCode.InternalServerError)
             {
                 throw new HttpRequestException();

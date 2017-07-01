@@ -19,9 +19,14 @@ namespace HMACAuthentication.Client
                 var oauth_signature = CreateSignature(apiKey, baseString);
                 return apiUrl + baseString + "&Signature=" +  oauth_signature;
             }
-            public static string productCreate(string baseUri)
+            public static string productCreate(string apiUrl, string apiUser, string apiKey)
             {
-                return "";
+                var datetime = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss+03:00", new System.Globalization.CultureInfo("tr-TR"));
+
+                var baseFormat = "Action={0}&Timestamp={1}&UserID={2}&Version=1.0";
+                var baseString = string.Format(baseFormat, WebUtility.UrlEncode("ProductCreate"), WebUtility.UrlEncode(datetime), WebUtility.UrlEncode(apiUser));
+                var oauth_signature = CreateSignature(apiKey, baseString);
+                return apiUrl + baseString + "&Signature=" + oauth_signature;
             }
             public static string productUpdate(string baseUri)
             {
